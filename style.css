@@ -443,6 +443,7 @@ span {
   border: 5px solid transparent;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  /* overflow: scroll; */
 }
 .service-box:hover {
   background: #fff;
@@ -455,6 +456,7 @@ span {
   flex-direction: column;
   text-align: left;
   min-height: 200px;
+  /* height: fit-content; */
   justify-content: left;
   padding: 5rem 5rem;
 }
@@ -631,6 +633,9 @@ height: 250px;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 5rem;
   }
+  .service-box{
+    min-height: 420px;
+  }
 }
 @media (max-width: 991px) {
   header {
@@ -655,6 +660,9 @@ height: 250px;
   }
   .services {
     padding-bottom: 7rem;
+  }
+  .service-box{
+    min-height: 420px;
   }
   .testimonials .wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -723,10 +731,16 @@ height: 250px;
   .services-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .service-box{
+    min-height: 470px;
+  }
 }
 @media (max-width: 426px) {
   .home-content h3 {
     font-size: 2.5rem;
+  }
+  .service-box{
+    min-height: 700px;
   }
   .home-content h1 {
     font-size: 5rem;
